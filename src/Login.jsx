@@ -1,119 +1,97 @@
-import { useState, useContext } from "react";
+import React, { useContext, useState } from 'react';
+import { CtxApi } from './context/CtxApi';
+import './login.css';
 
-import { AuthContext } from "./store/AuthContext"; //to pass on the current user details
-
-export default function Login({ onLogin }) {
-  const { setAuthDetails } = useContext(AuthContext);
+export default function Login({ onLoginSuccess }) {
+    const { setAuthDetails } = useContext(CtxApi); // Set state function from context
   const [current, setCurrent] = useState({
     email: "",
     password: "",
-    type: "",
+      type: "", // For the radio input
   });
-  const [isNew, setIsNew] = useState(false);
 
   function handleSubmit(event) {
-    event.preventDefault();
-    if (isNew && !current.type) {
+      event.preventDefault(); // Prevents page reload
+
+      // Validation
+      if (!current.type) {
       alert(
-        "Please select the user type before you proceed (admin / developer / client)",
+          "Please select a user type before proceeding (Admin / Developer / Client)."
       );
       return;
     }
     if (!current.email || !current.password) {
-      alert("Please completely enter all fields");
+        alert("Please fill in all fields completely.");
       return;
     }
+
+      // Set AuthContext and notify parent
     setAuthDetails(current);
-    onLogin();
+      console.log("Successfully stored in context:", current); // Debugging log
+      onLoginSuccess(); // Notify parent to switch to App.jsx
   }
 
   function handleInput(identity, value) {
     setCurrent((prevVal) => ({ ...prevVal, [identity]: value }));
   }
 
-  function handleLogIn() {
-    setIsNew((prev) => !prev);
-  }
-
   return (
-    <div style={{ position: "relative", height: "460px", width: "100%" }}>
-      <div className={`login ${isNew ? "active" : "hidden"}`}>
+      <div className="login">
+          <div className="form sign-in">
+              <h2>Sign In</h2>
         <form onSubmit={handleSubmit}>
-          <input
-            type="radio"
-            id="admin"
-            name="type"
-            value="Admin"
-            onChange={(e) => handleInput("type", e.target.value)}
-          />
-          <label htmlFor="admin" className="radio-label">
-            Administrator
-          </label>
+                  <label>
+                      <span>UserName</span>
+                      <input
+                          type="text"
+                          name="email"
+                          value={current.email}
+                          onChange={(e) => handleInput("email", e.target.value)}
+                          required
+                      />
+                  </label>
+                  <label>
+                      <span>Password</span>
+                      <input
+                          type="password"
+                          name="password"
+                          value={current.password}
+                          onChange={(e) => handleInput("password", e.target.value)}
+                          required
+                      />
+                  </label>
+                  <div>
+                      <input
+                          type="radio"
+                          id="admin"
+                          name="type"
+                          value="Admin"
+                          onChange={(e) => handleInput("type", e.target.value)}
+                      />
+                      <label htmlFor="admin">Administrator</label>
 
-          <input
-            type="radio"
-            id="developer"
-            name="type"
-            value="Developer"
-            onChange={(e) => handleInput("type", e.target.value)}
-          />
-          <label htmlFor="developer" className="radio-label">
-            Developer
-          </label>
+                      <input
+                          type="radio"
+                          id="developer"
+                          name="type"
+                          value="Developer"
+                          onChange={(e) => handleInput("type", e.target.value)}
+                      />
+                      <label htmlFor="developer">Developer</label>
 
-          <input
-            type="radio"
-            id="common"
-            name="type"
-            value="Common"
-            onChange={(e) => handleInput("type", e.target.value)}
-          />
-          <label htmlFor="common" className="radio-label">
-            Client
-          </label>
-
-          <input
-            type="text"
-            name="name"
-            placeholder="only lower case and no space"
-            required
-            onChange={(e) => handleInput("email", e.target.value)}
-          />
-
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-            onChange={(e) => handleInput("password", e.target.value)}
-          />
-
-          <button type="submit">Sign-up</button>
-        </form>
-        <button onClick={handleLogIn}>Already Registered?</button>
-      </div>
-      <div className={`login ${!isNew ? "active" : "hidden"}`}>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="chk" aria-hidden="true">
-            Login
-          </label>
-          <input
-            type="text"
-            name="name"
-            placeholder="only lower case and no space"
-            required
-            onChange={(e) => handleInput("email", e.target.value)}
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-            onChange={(e) => handleInput("password", e.target.value)}
-          />
-          <button type="submit">Login</button>
-        </form>
-        <button onClick={handleLogIn}>New to us?</button>
+                      <input
+                          type="radio"
+                          id="client"
+                          name="type"
+                          value="Client"
+                          onChange={(e) => handleInput("type", e.target.value)}
+                      />
+                      <label htmlFor="client">Client</label>
+                  </div>
+                  <button className="submit" type="submit">
+                      Sign In
+                  </button>
+              </form>
       </div>
     </div>
   );

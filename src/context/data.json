@@ -1,0 +1,209 @@
+{
+  "roles": [
+    {
+      "id": 1,
+      "name": "Amit Sharma",
+      "permissions": ["create", "edit", "delete", "view"]
+    },
+    { "id": 2, "name": "Ravi Patel", "permissions": ["view"] },
+    { "id": 3, "name": "Priya Gupta", "permissions": ["view", "edit"] },
+    { "id": 4, "name": "Ananya Iyer", "permissions": ["create", "view"] },
+    { "id": 5, "name": "Sushil Kumar", "permissions": ["edit", "view"] },
+    { "id": 6, "name": "Kajal Mehta", "permissions": ["create", "edit"] },
+    { "id": 7, "name": "Nikhil Joshi", "permissions": ["view"] },
+    { "id": 8, "name": "Sneha Reddy", "permissions": ["create", "edit"] },
+    { "id": 9, "name": "Vikram Singh", "permissions": ["delete", "view"] },
+    { "id": 10, "name": "Ritika Deshmukh", "permissions": ["edit", "view"] }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "name": "syed",
+      "role": "admin",
+      "task": ["review system logs", "manage permissions", "update policies"],
+      "request": ""
+    },
+    {
+      "id": 2,
+      "name": "bob",
+      "role": "client",
+      "task": [],
+      "request": "Requesting access to project resources"
+    },
+    {
+      "id": 3,
+      "name": "charliebrown",
+      "role": "developer",
+      "task": ["fix bugs", "implement new feature", "write unit tests"],
+      "request": "Requesting API documentation for integration"
+    },
+    {
+      "id": 4,
+      "name": "dianaross",
+      "role": "client",
+      "task": [],
+      "request": "Requesting project status updates"
+    },
+    {
+      "id": 5,
+      "name": "eveadams",
+      "role": "developer",
+      "task": [
+        "optimize database queries",
+        "improve UI design",
+        "update project documentation"
+      ],
+      "request": "Requesting access to testing environment"
+    },
+    {
+      "id": 6,
+      "name": "frankwhite",
+      "role": "admin",
+      "task": [
+        "configure server settings",
+        "schedule system backups",
+        "audit user activity"
+      ],
+      "request": ""
+    },
+    {
+      "id": 7,
+      "name": "gracelee",
+      "role": "client",
+      "task": [],
+      "request": "Requesting feedback on submitted requirements"
+    },
+    {
+      "id": 8,
+      "name": "henryford",
+      "role": "developer",
+      "task": [
+        "debug frontend issues",
+        "refactor legacy code",
+        "improve performance metrics"
+      ],
+      "request": "Requesting additional team members"
+    },
+    {
+      "id": 9,
+      "name": "islafisher",
+      "role": "admin",
+      "task": [
+        "update access control policies",
+        "monitor security threats",
+        "approve system changes"
+      ],
+      "request": ""
+    },
+    {
+      "id": 10,
+      "name": "jackblack",
+      "role": "developer",
+      "task": [
+        "write technical documentation",
+        "conduct code reviews",
+        "implement CI/CD pipeline"
+      ],
+      "request": "Requesting more time for feature development"
+    },
+    {
+      "id": 11,
+      "name": "rahul",
+      "role": "admin",
+      "task": [
+        "conduct server maintenance",
+        "review system architecture",
+        "monitor security logs"
+      ],
+      "request": ""
+    },
+    {
+      "id": 12,
+      "name": "priya",
+      "role": "user",
+      "task": [
+        "test new feature functionality",
+        "report bugs",
+        "create documentation"
+      ],
+      "request": "Requesting access to developer environment"
+    },
+    {
+      "id": 13,
+      "name": "sushant",
+      "role": "developer",
+      "task": ["implement feature A", "optimize code", "conduct unit testing"],
+      "request": "Requesting additional resources for development"
+    },
+    {
+      "id": 14,
+      "name": "neha",
+      "role": "client",
+      "task": [],
+      "request": "Requesting demo for project feature"
+    },
+    {
+      "id": 15,
+      "name": "manoj",
+      "role": "admin",
+      "task": [
+        "audit security reports",
+        "manage user access",
+        "perform regular system checks"
+      ],
+      "request": ""
+    },
+    {
+      "id": 16,
+      "name": "divya",
+      "role": "user",
+      "task": [
+        "create wireframes",
+        "coordinate with design team",
+        "assist in UI testing"
+      ],
+      "request": "Requesting access to staging environment"
+    },
+    {
+      "id": 17,
+      "name": "arvind",
+      "role": "developer",
+      "task": [
+        "debug backend issues",
+        "optimize database performance",
+        "write API documentation"
+      ],
+      "request": "Requesting more time for the next sprint"
+    },
+    {
+      "id": 18,
+      "name": "sonali",
+      "role": "client",
+      "task": [],
+      "request": "Requesting access to project management tool"
+    },
+    {
+      "id": 19,
+      "name": "vikram",
+      "role": "admin",
+      "task": [
+        "perform system audits",
+        "review firewall settings",
+        "approve user permissions"
+      ],
+      "request": ""
+    },
+    {
+      "id": 20,
+      "name": "anita",
+      "role": "user",
+      "task": [
+        "assist in feature testing",
+        "report UI bugs",
+        "write user stories"
+      ],
+      "request": "Requesting access to QA environment"
+    }
+  ]
+}

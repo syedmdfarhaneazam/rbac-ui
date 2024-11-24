@@ -1,0 +1,165 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Buttons and Selects */
+button,
+select {
+    margin-inline: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+button:hover,
+select:hover {
+    background-color: #0056b3;
+}
+
+/* Inputs */
+input {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #0056b3;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+/* Containers */
+.user-management-container,
+.role-management-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.users-table,
+.roles-table {
+    margin-top: 30px;
+    overflow-x: auto;
+    /* Enable horizontal scroll for small screens */
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: small;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        /* Adjust heading size */
+    }
+
+    table {
+        font-size: 0.9rem;
+        /* Reduce font size */
+    }
+
+    th,
+    td {
+        padding: 8px;
+        /* Adjust padding for smaller screens */
+    }
+
+    button,
+    select {
+        font-size: 0.8rem;
+        /* Reduce button font size */
+        padding: 4px 8px;
+        /* Adjust padding */
+    }
+
+    .users-table,
+    .roles-table {
+        font-size: 0.8rem;
+    }
+
+    .user-management-container,
+    .role-management-container {
+        padding: 10px;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: medium;
+    }
+
+    table {
+        font-size: 0.6rem;
+    }
+
+    th,
+    td {
+        padding: 6px;
+        /* Adjust padding further */
+    }
+
+    button,
+    select {
+        font-size: 0.6rem;
+        padding: 2px 4px;
+        margin-inline: 1px;
+    }
+
+    input {
+        font-size: 0.8rem;
+        width: 92%;
+        margin-bottom: 8px;
+    }
+
+    .users-table,
+    .roles-table {
+        overflow-x: scroll;
+    }
+}

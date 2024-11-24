@@ -1,17 +1,24 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import UserManagement from "./components/UserManagement";
-import RoleManagement from "./components/RoleManagement";
-import { useContext } from "react";
-import { AuthContext } from "./store/AuthContext"; //hte the context for futher use once done wirth login
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Navbar from "./pages/Navbar";
+// import Dashboard from "./pages/Dashboard";
+// import UserManagement from "./pages/UserManagement";
+// import RoleManagement from "./pages/RoleManagement";
+import { useContext } from 'react';
+import Developer from './Developer.jsx';
+import Client from './Client.jsx';
+import Admin from './Admin';
+import { CtxApi } from './context/CtxApi.jsx';
 
-export default function App() {
-  const { authDetails } = useContext(AuthContext);
-  console.log("Got this detail from context  :-> ", authDetails);
+const App = () => {
+  const { currentUser } = useContext(CtxApi);
+
   return (
     <div>
-      <RoleManagement />
-      <UserManagement />
+      {currentUser === 'Admin' && <Admin />}
+      {currentUser === 'Developer' && <Developer />}
+      {currentUser === 'Client' && <Client />}
     </div>
   );
-}
+};
+
+export default App;

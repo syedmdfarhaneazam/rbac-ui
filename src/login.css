@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to bottom, #0a0a0a, #001f3f, #002855);
+    color: #fff;
+}
+
+.form {
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    background: #101010;
+    /* Dark background */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    /* Subtle shadow */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0077ff;
+    /* Vibrant blue for heading */
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #b0c7e8;
+    /* Subtle blue for labels */
+}
+
+label span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #002b54;
+    border-radius: 5px;
+    background: #0d1b2a;
+    color: #fff;
+    font-size: 14px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #7a8ca5;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0077ff;
+    /* Vibrant blue on focus */
+}
+
+.radio-group {
+    margin-bottom: 15px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 12px;
+    border: 2px solid #003d6b;
+    border-radius: 20px;
+    background: #001f3f;
+    color: #7a8ca5;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+input[type="radio"]:checked+label {
+    background: #0077ff;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+button.submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #0056b3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.submit:hover {
+    background: #0077ff;
+}
+
+button.submit:active {
+    background: #003d6b;
+}
+
+.form div {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.form div label {
+    font-size: 14px;
+}
