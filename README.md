@@ -12,14 +12,14 @@ Welcome to **RBAC-UI**, a dynamic Role-Based Access Control (RBAC) system! 🚀 
 ![Login Page](https://drive.google.com/uc?id=1EpwhJiGlg7LllrrAIGonWROh61RRgyzZ)
 
 ### 🎥 Admin View Demo
-![ADMIN VIEW](https://github.com/user-attachments/assets/36b61e16-200d-46ec-ba83-edfb1d6525a0)
+(https://github.com/user-attachments/assets/36b61e16-200d-46ec-ba83-edfb1d6525a0)
 
 ### 🎥 Developer View Demo
-![Develoepr view](https://github.com/user-attachments/assets/d74395a1-3439-495e-ae38-397031ebfd33)
+(https://github.com/user-attachments/assets/d74395a1-3439-495e-ae38-397031ebfd33)
 
 
 ### 🎥 Client View Demo
-![Client view](https://github.com/user-attachments/assets/d0038344-884b-47b0-a307-d01d763ddca9)
+(https://github.com/user-attachments/assets/d0038344-884b-47b0-a307-d01d763ddca9)
 
 
 ---
