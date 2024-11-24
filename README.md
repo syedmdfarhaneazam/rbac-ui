@@ -77,11 +77,11 @@ This project is powered by an array of modern tools and technologies:
       <td><b>Vite</b> ⚡</td>
     </tr>
     <tr>
-      <td><img src="https://via.placeholder.com/48" alt="Neovim" width="48" height="48"></td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg" alt="Neovim" width="48" height="48"></td>
       <td><b>Neovim</b> 🖋️</td>
     </tr>
     <tr>
-      <td><img src="https://via.placeholder.com/48" alt="Git" width="48" height="48"></td>
+      <td><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" width="48" height="48"></td>
       <td><b>Git</b> 🔧</td>
     </tr>
   </tbody>
