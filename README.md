@@ -50,7 +50,7 @@ This project is powered by an array of modern tools and technologies:
 | ![JSON](https://img.icons8.com/color/48/000000/json.png) | **JSON** 📦        |
 | ![Vite](https://vitejs.dev/logo.svg) | **Vite** ⚡          |
 | ![Neovim](https://github.com/user-attachments/assets/fca0139d-6f22-4813-bd7a-6c46521de870) | **Neovim** 🖋️ |
-| ![GIT](https://images.app.goo.gl/CHSKgtgXHTTSe33k6) | **GIT** |
+| ![GIT]([https://images.app.goo.gl/CHSKgtgXHTTSe33k6](https://images.app.goo.gl/Q1snUCCeR6Dbdjxs8)) | **GIT** |
 
 ---
 
