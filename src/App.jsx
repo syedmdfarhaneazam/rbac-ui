@@ -14,9 +14,9 @@ const App = () => {
 
   return (
     <div>
-      {currentUser === 'Admin' && <Admin />}
-      {currentUser === 'Developer' && <Developer />}
-      {currentUser === 'Client' && <Client />}
+      {currentUser.role === 'admin' && <Admin />}
+      {currentUser.role === 'developer' && <Developer />}
+      {currentUser.role === 'client' && <Client />}
     </div>
   );
 };

@@ -92,11 +92,21 @@ export const CtxProvider = ({ children }) => {
     });
     setUsers(updatedUsers);
   };
-  const [currentUser, setCurrentType] = useState("");
+  const [currentUser, setCurrentUser] = useState(null); // start with `null` or `undefined`
+
   function setAuthDetails(current) {
-    console.log("got this type", current.type);
-    setCurrentType(current.type);
+    console.log("got this guy here ", current);
+
+    const user = users.find((user) => user.name === current);
+    if (user) {
+      setCurrentUser(user);
+      console.log("ive set the guy", current)
+    } else {
+      console.log("User not found");
+      setCurrentUser(null); // reset currentUser if no match is found
+    }
   }
+
 
   return (
     <CtxApi.Provider

@@ -1,0 +1,183 @@
+/* Container for tasks */
+.tasks-container {
+    padding: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.welcome-text {
+    font-size: 2rem;
+    font-family: 'Times New Roman', serif;
+    color: #fff;
+}
+
+.tasks-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.tasks-list {
+    padding-left: 20px;
+}
+
+.task-item {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.task-item:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+/* Container for contact information */
+.contact-container {
+    padding: 20px;
+    background-color: #121212;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Title and Subtitle */
+.contact-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-subtitle {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Container for contact cards */
+.contact-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    overflow-x: auto;
+    /* Makes it scrollable horizontally */
+}
+
+/* Common styling for all contact cards */
+.contact-card {
+    background-color: #0e0f63;
+    /* Dark blue for card */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 300px;
+    min-width: 250px;
+    text-align: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    /* Prevents shrinking on small screens */
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    /* Enhanced shadow on hover */
+}
+
+/* Specific styles for Admin Cards */
+.admin-card {
+    background-color: #f44336;
+    /* Red background for Admin */
+}
+
+.admin-card:hover {
+    background-color: #d32f2f;
+    /* Slightly darker red on hover */
+}
+
+/* Specific styles for Developer Cards */
+.developer-card {
+    background-color: #0e0f63;
+    /* Blue background for Developer */
+}
+
+.developer-card:hover {
+    background-color: #1a237e;
+    /* Slightly darker blue on hover */
+}
+
+/* Text styling for contact cards */
+.contact-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.note {
+    font-size: 1rem;
+    color: #f3f4f7;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .contact-card {
+        max-width: 100%;
+        min-width: 200px;
+        padding: 15px;
+    }
+
+    .contact-name {
+        font-size: 1.3rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+    }
+
+    .task-item {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tasks-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-title {
+        font-size: 1.2rem;
+    }
+
+    .contact-name {
+        font-size: 1.2rem;
+    }
+
+    .contact-description {
+        font-size: 0.9rem;
+    }
+}

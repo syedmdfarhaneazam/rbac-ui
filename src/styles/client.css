@@ -1,0 +1,240 @@
+/* Client Information Container */
+.client-info {
+    background-color: #0e0f63;
+    /* Matching the dashboard overview style */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    animation: floatUp 1s ease-in-out infinite;
+    transition: transform 0.3s ease-in-out;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Floating Animation */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Greeting and Intro */
+.greeting {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.greeting:hover {
+    transform: scale(1.1);
+    color: #00d4ff;
+    /* Light blue on hover */
+}
+
+.intro {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #ddd;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Client Details Section */
+.client-details {
+    background-color: #141536;
+    /* Slightly darker background for details */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on Details */
+.client-details:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+}
+
+/* Title of Each Client Detail */
+.details-title {
+    font-size: 1.3rem;
+    color: #00d4ff;
+    /* Light blue title */
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* Client Details Text */
+.details {
+    font-size: 1.1rem;
+    color: #f3f4f7;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .client-info {
+        padding: 15px;
+    }
+
+    .greeting {
+        font-size: 1.6rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .details-title {
+        font-size: 1.1rem;
+    }
+
+    .details {
+        font-size: 1rem;
+    }
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/*developers carss*/
+/* Container for all developer cards */
+.developers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Space between cards */
+    padding: 20px;
+    overflow-x: auto;
+    /* Scrollable container horizontally */
+    margin-top: 20px;
+    background-color: #121212;
+    /* Dark background for the container */
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Developer Card Styling */
+.developer-card {
+    background-color: #0e0f63;
+    /* Dark blue for the card */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 300px;
+    min-width: 250px;
+    text-align: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    /* Prevents shrinking of cards on smaller screens */
+}
+
+/* Hover Effect for Developer Card */
+.developer-card:hover {
+    transform: translateY(-5px);
+    /* Slight lift effect */
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    /* Enhanced shadow on hover */
+}
+
+/* Developer Name Styling */
+.developer-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Effect for Developer Name */
+.developer-name:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+    color: #00d4ff;
+    /* Light blue color on hover */
+}
+
+/* Developer Description Styling */
+.developer-description {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-top: 10px;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect for Developer Description */
+.developer-description:hover {
+    color: #f3f4f7;
+    /* Lighter color on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .developer-card {
+        max-width: 100%;
+        padding: 15px;
+        min-width: 200px;
+        /* Ensure cards are responsive */
+    }
+
+    .developer-name {
+        font-size: 1.3rem;
+    }
+
+    .developer-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .developer-name {
+        font-size: 1.2rem;
+    }
+
+    .developer-description {
+        font-size: 0.9rem;
+    }
+}

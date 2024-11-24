@@ -3,27 +3,22 @@ import { CtxApi } from './context/CtxApi';
 import './login.css';
 
 export default function Login({ onLoginSuccess }) {
-    const { setAuthDetails } = useContext(CtxApi); // Set state function from context
-  const [current, setCurrent] = useState({
-    email: "",
-    password: "",
-      type: "", // For the radio input
-  });
+    const { users, setAuthDetails } = useContext(CtxApi); // Set state function from context
+    const [current, setCurrent] = useState("");
 
   function handleSubmit(event) {
       event.preventDefault(); // Prevents page reload
 
-      // Validation
-      if (!current.type) {
-      alert(
-          "Please select a user type before proceeding (Admin / Developer / Client)."
-      );
+
+      //validations here
+      if (!current) {
+          alert("Please fill in all fields completely.");
       return;
     }
-    if (!current.email || !current.password) {
-        alert("Please fill in all fields completely.");
-      return;
-    }
+      if (!users.some(user => user.name === current)) {
+          alert("You are not an existing user you should contact the admin to get your entry as existing user");
+          return;
+      }
 
       // Set AuthContext and notify parent
     setAuthDetails(current);
@@ -31,8 +26,8 @@ export default function Login({ onLoginSuccess }) {
       onLoginSuccess(); // Notify parent to switch to App.jsx
   }
 
-  function handleInput(identity, value) {
-    setCurrent((prevVal) => ({ ...prevVal, [identity]: value }));
+    function handleInput(value) {
+        setCurrent(value);
   }
 
   return (
@@ -44,9 +39,9 @@ export default function Login({ onLoginSuccess }) {
                       <span>UserName</span>
                       <input
                           type="text"
-                          name="email"
-                          value={current.email}
-                          onChange={(e) => handleInput("email", e.target.value)}
+                          name="name"
+                          value={current.name}
+                          onChange={(e) => handleInput(e.target.value)}
                           required
                       />
                   </label>
@@ -56,38 +51,10 @@ export default function Login({ onLoginSuccess }) {
                           type="password"
                           name="password"
                           value={current.password}
-                          onChange={(e) => handleInput("password", e.target.value)}
+                          //onChange={(e) => handleInput("password", e.target.value)}
                           required
                       />
                   </label>
-                  <div>
-                      <input
-                          type="radio"
-                          id="admin"
-                          name="type"
-                          value="Admin"
-                          onChange={(e) => handleInput("type", e.target.value)}
-                      />
-                      <label htmlFor="admin">Administrator</label>
-
-                      <input
-                          type="radio"
-                          id="developer"
-                          name="type"
-                          value="Developer"
-                          onChange={(e) => handleInput("type", e.target.value)}
-                      />
-                      <label htmlFor="developer">Developer</label>
-
-                      <input
-                          type="radio"
-                          id="client"
-                          name="type"
-                          value="Client"
-                          onChange={(e) => handleInput("type", e.target.value)}
-                      />
-                      <label htmlFor="client">Client</label>
-                  </div>
                   <button className="submit" type="submit">
                       Sign In
                   </button>
