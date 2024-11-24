@@ -12,13 +12,13 @@ Welcome to **RBAC-UI**, a dynamic Role-Based Access Control (RBAC) system! 🚀 
 ![Login Page](https://drive.google.com/uc?id=1EpwhJiGlg7LllrrAIGonWROh61RRgyzZ)
 
 ### 🎥 Admin View Demo
-<video width="600" controls> <source src="https://drive.google.com/uc?export=download&id=1c9RRqwiFN1iv11kxN6PIH3yubfu08PxS" type="video/mp4"> Your browser does not support the video tag. </video>
+<video width="600" controls> <source src="https://drive.google.com/uc?export=download&id=1c9RRqwiFN1iv11kxN6PIH3yubfu08PxS" type="video"> Your browser does not support the video tag. </video>
 
 ### 🎥 Developer View Demo
-<video width="600" controls> <source src="https://drive.google.com/uc?export=download&id=1txOUSPPIwTc03E_H3OnJy4UN_y4J6Zvl" type="video/mp4"> Your browser does not support the video tag. </video>
+<video width="600" controls> <source src="https://drive.google.com/uc?export=download&id=1txOUSPPIwTc03E_H3OnJy4UN_y4J6Zvl" type="video"> Your browser does not support the video tag. </video>
 
 ### 🎥 Client View Demo
-<video width="600" controls> <source src="https://drive.google.com/uc?export=download&id=1g4ZCNP_O9gk_Y5s52CdY1b-C7NzvXJJU" type="video/mp4"> Your browser does not support the video tag. </video>
+<video width="600" controls> <source src="https://drive.google.com/uc?export=download&id=1g4ZCNP_O9gk_Y5s52CdY1b-C7NzvXJJU" type="video"> Your browser does not support the video tag. </video>
 
 ---
 
