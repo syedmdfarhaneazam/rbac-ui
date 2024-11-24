@@ -1,68 +1,106 @@
 /* Navbar Styles */
 .navbar {
-    background-color: #007bff;
+  background-color: #1a1a2e;
     color: white;
-    padding: 10px 20px;
+  padding: 15px 20px;
     position: relative;
     z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.8rem;
+    font-weight: bold;
+  color: #fff;
+    margin: 0;
+  transition: transform 0.3s ease-in-out;
   }
   
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .navbar-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Links for larger screens */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-links li {
+  margin-inline: 20px;
+  position: relative;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+    transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .navbar-links a::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #00d4ff;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+  color: #00d4ff;
+  }
+  
+  .navbar-links a:hover::before {
     width: 100%;
   }
   
-  /* Logo */
-  .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    margin: 0;
-  }
-  
-  /* Links for larger screens */
-  .navbar-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .navbar-links li {
-    margin-inline: 20px;
-  }
-  
-  .navbar-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .navbar-links a:hover {
-    text-decoration: underline;
+  /* Highlight for Active Link */
+  .navbar-links .active-link {
+    color: #00d4ff;
+    border-bottom: 2px solid #00d4ff;
+    padding-bottom: 2px;
+    /* Adds spacing for the border */
   }
   
   /* Hamburger Menu */
   .navbar-hamburger {
     display: none;
     cursor: pointer;
-    font-size: 1.8rem;
+  font-size: 2rem;
     color: white;
+  transition: transform 0.3s ease-in-out;
   }
   
-  /* Mobile Styles */
-  @media screen and (max-width: 768px) {
-    .navbar-hamburger {
-      display: block; /* Hamburger visible only on small screens */
+  .navbar-hamburger:hover {
+    transform: rotate(90deg);
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .navbar-hamburger {
+    display: block;
     }
-  
+    
     .navbar-links {
-      display: none; /* Initially hidden on mobile */
+    display: none;
       flex-direction: column;
-      background-color: #007bff;
+    background-color: #1a1a2e;
       position: absolute;
       top: 100%;
       right: 0;
@@ -70,13 +108,25 @@
       text-align: center;
       padding: 10px 0;
     }
-  
+    
     .navbar-links.active {
-      display: flex; /* Visible when toggled */
+    display: flex;
+      animation: slideDown 0.3s ease-in-out;
     }
-  
+    
     .navbar-links li {
       margin: 10px 0;
     }
+    }
+/* Animations */
+@keyframes slideDown {
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
   }
-  
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

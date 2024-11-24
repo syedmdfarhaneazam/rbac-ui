@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect } from "react";
 import { CtxApi } from "../context/CtxApi";
+import "./UserM.css";
 
 const RoleManagement = () => {
   const { roles, setRoles } = useContext(CtxApi);
@@ -118,16 +119,14 @@ const RoleManagement = () => {
 
   return (
     <div className="role-management-container">
-      <h2>Manage Roles</h2>
-
-      {/* Role Form (Add/Edit Role) */}
+      <h2>Roles Management Area</h2>
       <div className="add-role-form">
         <h3>{isEditing ? "Edit Role" : "Add New Role"}</h3>
         <input
           type="text"
           name="name"
           value={newRole.name}
-          placeholder="Role Name"
+          placeholder="New User Name"
           onChange={handleInputChange}
         />
 
@@ -152,12 +151,12 @@ const RoleManagement = () => {
       </div>
 
       {/* Roles Table */}
-      <div className="roles-table">
-        <h3>Roles List</h3>
+      <div className="roles-table styled-table">
+        <h3>Roles given to different people</h3>
         <table>
           <thead>
             <tr>
-              <th>Role Name</th>
+              <th>Name</th>
               <th>Permissions</th>
               <th>Actions</th>
             </tr>
@@ -168,8 +167,13 @@ const RoleManagement = () => {
                 <td>{role.name}</td>
                 <td>{role.permissions.join(", ")}</td>
                 <td>
-                  <button onClick={() => handleEditRole(role.id)}>Edit</button>
-                  <button onClick={() => handleDeleteRole(role.id)}>
+                  <button className="btn-edit" onClick={() => handleEditRole(role.id)}>
+                    Edit
+                  </button>
+                  <button
+                    className="btn-delete"
+                    onClick={() => handleDeleteRole(role.id)}
+                  >
                     Delete
                   </button>
                 </td>
@@ -178,6 +182,7 @@ const RoleManagement = () => {
           </tbody>
         </table>
       </div>
+
     </div>
   );
 };

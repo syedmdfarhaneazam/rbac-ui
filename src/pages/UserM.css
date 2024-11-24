@@ -1,0 +1,75 @@
+.roles-table {
+    margin-top: 20px;
+}
+
+.roles-table h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.styled-table table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.styled-table th {
+    background-color: #0e0f63;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.styled-table td {
+    background-color: #1a1a2e;
+    color: #d6d6d6;
+}
+
+.styled-table tr:nth-child(even) td {
+    background-color: #24244d;
+}
+
+.styled-table tr:hover td {
+    background-color: #2e2e72;
+    color: #00d4ff;
+    cursor: pointer;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-edit {
+    background-color: #00d4ff;
+}
+
+.btn-edit:hover {
+    background-color: #009ac8;
+}
+
+.btn-delete {
+    background-color: #ff4d4d;
+    margin-left: 8px;
+}
+
+.btn-delete:hover {
+    background-color: #cc0000;
+}
