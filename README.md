@@ -40,17 +40,54 @@ Welcome to **RBAC-UI**, a dynamic Role-Based Access Control (RBAC) system! 🚀 
 ## 🛠 Tech Stack
 This project is powered by an array of modern tools and technologies:
 
-| Logo                         | Technology          |
-|------------------------------|---------------------|
-| ![React](https://img.icons8.com/color/48/000000/react-native.png) | **ReactJS** 🌐   |
-| ![Tailwind](https://github.com/user-attachments/assets/d7f0aab2-e30a-4d52-98f5-4083f9feece4) | **Tailwind CSS** 🎨  |
-| ![JavaScript](https://img.icons8.com/color/48/000000/javascript.png) | **JavaScript** 💻 |
-| ![CSS](https://img.icons8.com/color/48/000000/css3.png) | **CSS** 🎨         |
-| ![HTML](https://img.icons8.com/color/48/000000/html-5--v1.png) | **HTML** 🖼️       |
-| ![JSON](https://img.icons8.com/color/48/000000/json.png) | **JSON** 📦        |
-| ![Vite](https://vitejs.dev/logo.svg) | **Vite** ⚡          |
-| ![Neovim](https://github.com/user-attachments/assets/fca0139d-6f22-4813-bd7a-6c46521de870) | **Neovim** 🖋️ |
-| ![GIT]([https://images.app.goo.gl/CHSKgtgXHTTSe33k6](https://images.app.goo.gl/Q1snUCCeR6Dbdjxs8)) | **GIT** |
+<table>
+  <thead>
+    <tr>
+      <th>Logo</th>
+      <th>Technology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" width="48" height="48"></td>
+      <td><b>ReactJS</b> 🌐</td>
+    </tr>
+    <tr>
+      <td><img src="https://via.placeholder.com/48" alt="Tailwind CSS" width="48" height="48"></td>
+      <td><b>Tailwind CSS</b> 🎨</td>
+    </tr>
+    <tr>
+      <td><img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" width="48" height="48"></td>
+      <td><b>JavaScript</b> 💻</td>
+    </tr>
+    <tr>
+      <td><img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" width="48" height="48"></td>
+      <td><b>CSS</b> 🎨</td>
+    </tr>
+    <tr>
+      <td><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML" width="48" height="48"></td>
+      <td><b>HTML</b> 🖼️</td>
+    </tr>
+    <tr>
+      <td><img src="https://img.icons8.com/color/48/000000/json.png" alt="JSON" width="48" height="48"></td>
+      <td><b>JSON</b> 📦</td>
+    </tr>
+    <tr>
+      <td><img src="https://vitejs.dev/logo.svg" alt="Vite" width="48" height="48"></td>
+      <td><b>Vite</b> ⚡</td>
+    </tr>
+    <tr>
+      <td><img src="https://via.placeholder.com/48" alt="Neovim" width="48" height="48"></td>
+      <td><b>Neovim</b> 🖋️</td>
+    </tr>
+    <tr>
+      <td><img src="https://via.placeholder.com/48" alt="Git" width="48" height="48"></td>
+      <td><b>Git</b> 🔧</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 ---
 
