@@ -17,6 +17,20 @@ export default function Auth() {
             ) : (
                 <App /> // showing conditionally 
             )}
+            <footer>
+    <p>Website made by <strong>Syed Md Farhan E Azam</strong></p>
+    <div>
+      <a href="https://github.com/syedmdfarhaneazam" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" /> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/syed-md-farhan-e-azam-b21043279/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="LinkedIn" /> LinkedIn
+      </a>
+      <a href="https://leetcode.com/u/SYED_MD_FARHAN_E_AZAM/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/leetcode.svg" alt="LeetCode" /> LeetCode
+      </a>
+    </div>
+  </footer>
         </CtxProvider>
     );
 }
